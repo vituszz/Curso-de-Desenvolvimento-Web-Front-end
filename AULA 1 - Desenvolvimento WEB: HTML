@@ -1,0 +1,229 @@
+AULA 1 - Desenvolvimento WEB
+---------------------------------
+ANOTAÇÕES
+
+O HTML é uma linguagem de marcação que serve para descrever a estrutura das páginas web.
+
+Replit - IDE para Fazer os códigos
+
+Adicionar comentário/tag: <!------->
+
+UTF-8 (8-bit Unicode Transformation Format) é um tipo de codificação binária (Unicode) de comprimento variável criado por Ken Thompson e Rob Pike. Pode representar qualquer caractere universal padrão do Unicode, sendo também compatível com o ASCII.
+
+img src= utilizar imagens por URL.
+
+img src + nome do arquivo arrastado pra IDE = imagens diretamente do computador
+
+videos são colocados através de links incorporados.
+
+a href + link=  colocar links externos.
+
+a href + nome do arquivo.html = colocar links internos.
+
+abaixo como colocar usuário e senha, Rótulos e campo de entrada de texto:
+<label for="">Usuário</label>
+           	<input type="text" id="usuário"required>
+           	<br>
+           	<label for="">Senha</label>
+           	<input type="password" id="senha"required>
+<!-- para ocultarmos a senha, usamos o type password -->
+<!-- para dar um aviso caso um usuário não coloque a senha ou usuário, usamos required-->
+
+strong = texto em negrito
+em = texto em itálico
+u = texto sublinhado
+s = texto riscado
+--------------------
+p = parágrafos
+li = lista
+ul = lista desordenada. (types: circle, square, disc, none)
+ol = lista ordenada. (types: a , i , 1)
+Cabeçalho ou título: H1 - H6 = quanto maior o número, menor seu tamanho.
+lang="pt-BR"> = setar idioma.
+head = cabeçalho que contém informações sobre o documento que não são mostradas na tela. 
+body =  corpo, área principal do documento. (conteúdo)
+DOCTYPE: define o tipo de documento .
+title = define o título do documento. TAG de abertura/fechamento.
+
+
+---------------------------------------------------------------------------------------------------------------
+SCRIPT COM TUDO QUE REALIZEI NA AULA
+Index.html (página 1)
+
+<!--
+  Este é um comentário em HTML
+  -->
+<!-- abaixo define o tipo do documento como html 5 -->
+  <!DOCTYPE html>
+
+  <html lang="pt-BR">
+     <head>
+<!-- Na tag head estão as configurações da página-->
+       <meta charset="utf-8">
+       <title> 
+         Aula HTML 5
+        </title>
+     </head>
+
+     <body>
+        <a href="/pagina2.html">Página 2 </a>
+<!-- Dentro da Tag Body estão os elementos visiveis para o usuário --> 
+       
+<!-- Cabeçalho ou Título -->
+       <h1>
+        Este é o cabeçalho H1
+       </h1>
+       <h2>
+        Este é o cabeçalho H2
+       </h2>
+       <h3>
+        Este é o cabeçalho H3
+       </h3>  
+       <h4>
+        Este é o cabeçalho H4
+       </h4>
+       <h5>
+        Este é o cabeçalho H5
+       </h5>
+       <h6>
+        Este é o cabeçalho H6
+       </h6>
+
+       <!-- a tag abaixo gera uma linha horizontal na tela -->
+       <hr>
+
+       <h2>Parágrafos</h2>
+
+       <p>
+         Você Sabia? Girafas não têm cordas vocais. A língua de uma baleia-azul pode pesar até 3,6 toneladas, o equivalente ao peso de um elefante médio. 
+       </p>
+       <p>
+         Você Sabia? As borboletas têm cerca de 12 mil olhos. Os vertebrados mais longevos do mundo são os tubarões da Groenlândia, que podem viver cerca de 400 anos.?
+       </p>
+
+       <hr>
+
+       <h2> Formatação de texto em HTML </h2>
+       <p>
+                  <!-- "strong"  faz o texto ficar em negrito -->
+         <strong>Este texto está em negrito</strong> 
+            <br> <!-- está tag faz a quebra de linha -->
+         <!-- "em"  faz o texto ficar em itálico -->
+         <em>Este texto está em itálico</em>
+            <br>
+                 <!-- "u"  faz o texto ficar em sublinhado -->
+         <u> Este texto está sublinhado</u>
+         <br>
+                 <!-- "del"  faz o texto ficar riscado -->
+         <s> Este texto está riscado</s>
+         <p>
+
+         <hr>
+         <h2>Listas em HTML</h2>
+<!-- LISTA NÃO ORDENADA UL 
+           TYPES não ordenada- circle, square, disc, none 
+           TYPES ordenada - a , i , 1
+-->
+           
+           <h2>Lista não ordenada</h2>  
+           <ul type= "disc">
+            <li>Maça</li>
+            <li>Banana</li>
+            <li>Pera</li>
+            <li>Uva</li>
+           </ul> 
+       
+        <h2>Lista ordenada</h2>
+           <ol type="I">
+            <li>Ir à feira</li>
+            <li>Comprar frutas</li>
+            <li>Lavar as frutas</li>
+            <li>Fazer uma vitamina</li>
+           </ol>
+
+       <hr>
+       <h2>Imagens</h2>
+       <!-- abaixo vamos utilizar imagens por URL --> 
+       <img src= "https://st3.depositphotos.com/1529253/33304/v/600/depositphotos_333043876-stock-illustration-tattoo-i-love-you-heart.jpg" alt= "te amo entenda" width= "130"
+       <!-- abaixo vamos utilizar imagens diretamente do computador --> 
+
+       <img src= "neymar.png" alt= "Foto do melhor do mundo" width= "150"
+         
+       <hr>
+       <h2>Videos</h2>
+
+       <iframe width= "560" height= "300" <iframe width="560" height="315" src="https://www.youtube.com/embed/yZwHhSlwie4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+         <hr> 
+         <h2>Links em HTML</h2>
+         <h3>Links externos</h3>
+         <a href="https://www.nike.com.br" target="_blank">
+           Site Nike
+         </a>
+         |
+         <a href="https://www.adidas.com.br" target="_blank">
+           Site Adidas
+         </a>
+         |
+         <a href="https://br.puma.com" target="_blank">
+           Site Puma
+         </a>
+         <h3>Links internos</h3>
+         <a href="pagina2.html">Página 2</a>         
+  </html>
+  ---------------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------
+  ---------------------------------------------------------------------------------------------------
+  Index.html (página 2)
+  
+  
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Aula HTML 5</title>
+</head>
+<body>
+  <a href="index.html">Home</a>
+  <h1>Página 2</h1>
+  
+  <h2>Tabelas em HTML</h2>
+  <table border="3" width= "280">
+    <tr> <!-- linha da tabela -->
+       <td> <!-- coluna da tabela -->
+          Descrição
+          <td>
+             Valor
+            </td>
+          </td>
+         </tr>
+      <table>
+        <tr>
+          <td>
+            Mlk besta dms kkkk
+            </td>
+              <td> 
+            000000000000,1
+              </td>
+             <tr>
+       <table>
+
+         <hr>
+         <h2>Formulários em HTML</h2>
+         <form>
+<!-- Rótulos e campo de entrada de texto -->
+           <label for="">Usuário</label>
+           <input type="text" id="usuário"required>
+           <br>
+           <label for="">Senha</label>
+           <input type="password" id="senha"required>
+<!-- para ocultarmos a senha, usamos o type password -->
+<!-- para dar um aviso caso um usuário não coloque a senha ou usuário, usamos required-->
+           <br>
+           <button type= "submit">ENTRAR</button>
+         </form>
+  <hr>
+  <h2>kkkkk fotinha do tonto</h2>
+  <img src= "doido_n.png" alt= "Foto do melhor do mundo" width= "150"
+    
+</html>
